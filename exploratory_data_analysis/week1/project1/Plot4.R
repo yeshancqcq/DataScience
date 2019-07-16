@@ -15,18 +15,18 @@ chosen$weekdays <- as.POSIXct(converting)
 par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(1,1,1,1))
 with(chosen, {
   # 1st plot
-  plot(Global_active_power~weekdays, type="l", ylab="Global Active Power (kW)", col="#de9b95", xlab="")
+  plot(Global_active_power~weekdays, type="l", ylab="Global Active Power (kilowatts)", col="#de9b95", xlab="")
   # 2nd plot
-  plot(Voltage~weekdays, type="l", ylab="Voltage (V)", xlab="datetime", col="#95b0de")
+  plot(Voltage~weekdays, type="l", ylab="Voltage", xlab="datetime", col="black")
   # 3rd plot
-  plot(Sub_metering_1~weekdays, type="l", ylab="Global Active Power (kW)", col="#de9b95", xlab="")
+  plot(Sub_metering_1~weekdays, type="l", ylab="Global Active Power (kilowatts)", col="black", xlab="")
   # Adding 2 more lines to 3rd plot
-  lines(Sub_metering_2~weekdays,col='black')
-  lines(Sub_metering_3~weekdays,col='#95b0de')
-  legend("topright", col=c("#de9b95", "black", "#95b0de"), lwd=1, bty="l",
-         legend=c("Kitchen", "Laundry Room", "Heater and AC"), cex = 0.65)
+  lines(Sub_metering_2~weekdays,col='blue')
+  lines(Sub_metering_3~weekdays,col='red')
+  legend("topright", col=c("black", "blue", "red"), lwd=1, bty="l",
+         legend=c("sub_Metering_1","sub_Metering_2","sub_Metering_3"), cex = 0.65)
   # 4th plot
-  plot(Global_reactive_power~weekdays, type="l", ylab="Global Rective Power (kW)", col = "#a7c4bb", xlab="datetime")
+  plot(Global_reactive_power~weekdays, type="l", ylab="Global Rective Power (kilowatts)", col = "black", xlab="datetime")
 })
 
 dev.copy(png, file="./project1/Plot4.png", height=480, width=480)

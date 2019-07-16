@@ -12,7 +12,7 @@ converting <- paste(as.Date(chosen$Date), chosen$Time)
 chosen$weekdays <- as.POSIXct(converting)
 
 # making plot 1
-hist(chosen$Global_active_power, main="Global Active Power", xlab="Global Active Power (kW)", ylab="Frequency", col="#de9b95")
 
+hist(chosen$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="red")
 dev.copy(png, file="./project1/plot1.png", height=480, width=480)
 dev.off()
