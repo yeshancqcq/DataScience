@@ -13,6 +13,6 @@ chosen$weekdays <- as.POSIXct(converting)
 
 # making plot 2
 
-plot(chosen$Global_active_power~chosen$weekdays,  main="Global Active Power Thu to Sat", type="l",ylab="Global Active Power (kilowatts)", xlab="", col = "black")
+plot(chosen$Global_active_power~chosen$weekdays,  main="", type="l",ylab="Global Active Power (kilowatts)", xlab="", col = "black")
 dev.copy(png, file="./project1/Plot2.png", height=480, width=480)
 dev.off()

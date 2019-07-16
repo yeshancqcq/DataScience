@@ -12,7 +12,7 @@ converting <- paste(as.Date(chosen$Date), chosen$Time)
 chosen$weekdays <- as.POSIXct(converting)
 
 # making plot 3
-with(chosen, {plot(Sub_metering_1~weekdays, type="l", main = "Energy Sub-Metering", col="black",ylab="Global Active Power (kilowatts)", xlab="")
+with(chosen, {plot(Sub_metering_1~weekdays, type="l", main = "", col="black",ylab="Global Active Power (kilowatts)", xlab="")
   #Adding two more lines to the same graph
   lines(Sub_metering_2~weekdays,col='blue')
   lines(Sub_metering_3~weekdays,col='red')
