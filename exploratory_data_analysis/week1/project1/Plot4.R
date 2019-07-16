@@ -29,5 +29,5 @@ with(chosen, {
   plot(Global_reactive_power~weekdays, type="l", ylab="Global Rective Power (kW)", col = "#a7c4bb", xlab="datetime")
 })
 
-dev.copy(png, file="./project1/Plot4.png", height=500, width=500)
+dev.copy(png, file="./project1/Plot4.png", height=480, width=480)
 dev.off()

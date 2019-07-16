@@ -19,5 +19,5 @@ with(chosen, {plot(Sub_metering_1~weekdays, type="l", main = "Energy Sub-Meterin
 })
 legend("topright", col=c("#de9b95", "black", "#95b0de"), lwd=1, legend=c("Kitchen", "Laundry Room", "Heater and AC"))
 
-dev.copy(png, file="./project1/Plot3.png", height=500, width=500)
+dev.copy(png, file="./project1/Plot3.png", height=480, width=480)
 dev.off()

@@ -14,5 +14,5 @@ chosen$weekdays <- as.POSIXct(converting)
 # making plot 1
 hist(chosen$Global_active_power, main="Global Active Power", xlab="Global Active Power (kW)", ylab="Frequency", col="#de9b95")
 
-dev.copy(png, file="./project1/plot1.png", height=500, width=500)
+dev.copy(png, file="./project1/plot1.png", height=480, width=480)
 dev.off()
